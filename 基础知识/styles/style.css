@@ -44,16 +44,6 @@ img {
     color: rgb(87, 207, 157);
     border: 1px solid rgb(173, 121, 121);
 }
-
-.content {
-    /* width: 375px; */
-    background-color: rgb(148, 95, 20);
-    padding: 0 20px 20px 20px;
-    border: 1px solid rgb(151, 41, 41);
-    margin:0 auto;
-}
-
-  
   a {
       font-size: 20px;
       color: rgb(243, 239, 11)

@@ -54,3 +54,28 @@ image1.onclick = function () {
         image1.setAttribute('src', 'images/touxiang.png');
     }
 };
+
+/**给切换用户按钮做处理 */
+let btn = document.querySelector('button');
+///设置标题
+function setH1Name (name) {
+    let h1 = document.querySelector('h1');
+    h1.textContent = name;
+}
+
+///输入用户名称
+function setUserName() {
+    let name = prompt('输入名称');
+    localStorage.setItem('name',name);
+    setH1Name(name);
+}
+
+///读取存储的名称
+let locationNaem = localStorage.getItem('name');
+if (!locationNaem) {
+    setH1Name('你是大傻逼啊');
+}else {
+    setH1Name(locationNaem);
+}
+
+btn.onclick = setUserName;
