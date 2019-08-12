@@ -1,9 +1,9 @@
 /**添加事件 */
-var image = document.getElementsByClassName('image')[0];
-console.log(image);
-image.onclick = function () {
-    alert('image');
-}
+// var image = document.getElementsByClassName('image')[0];
+// console.log(image);
+// image.onclick = function () {
+//     alert('image');
+// }
 
 var p = document.getElementsByClassName('ssdsd')[0];
 console.log(p);
@@ -12,15 +12,8 @@ p.onclick = function () {
 }
 
 /**修改html 中某个选择器的文本 */
-let myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello World';
-
-/**test Method */
-function test(q) {
-    console.log(typeof q);
-    return q;
-}
-test(123);
+// let myHeading = document.querySelector('h1');
+// myHeading.textContent = 'Hello World';
 
 /**数据类型*/
 // 字符串
@@ -43,10 +36,21 @@ if (isSelect == 'select') {
 }
 
 /**函数 */
-function addCount(numA,numB,numC) {
-    let sum = numA +numB + numC;
+function addCount(numA, numB, numC) {
+    let sum = numA + numB + numC;
     alert('和是' + sum);
     return sum;
 }
 
 addCount(12, 34, 454);
+
+/**切换图片 */
+let image1 = document.querySelector('img');
+image1.onclick = function () {
+    let imageScr = image1.getAttribute('src');
+    if (imageScr === "images/touxiang.png") {
+        image1.setAttribute('src', 'images/test.gif');
+    } else {
+        image1.setAttribute('src', 'images/touxiang.png');
+    }
+};
