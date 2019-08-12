@@ -1,4 +1,4 @@
-var image = document.getElementsByClassName('image');
+var image = document.getElementsByClassName('image')[0];
 console.log(image);
 image.onclick = function(){
     alert('image');
